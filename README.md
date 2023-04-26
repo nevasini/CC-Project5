@@ -65,6 +65,23 @@ Once all the microservices are up and running,
     <img src = "https://user-images.githubusercontent.com/56164920/158070411-3dff479d-ee7f-4eeb-b38f-92ccc221c6aa.png"/>
 </p>
 
+1.  docker-compose build --no-cache
+2.  minikube image load flask-app
+3.  kubectl apply -f secrets.yaml
+kubectl apply -f configmap.yaml
+kubectl apply -f services.yaml
+kubectl apply -f deployment.yaml
+4. kubectl get pods
+kubectl get svc
+kubectl get deployments
+5. minikube ip
+6. Open the application on firefox. URL: http://<minikube_ip>:/
+
+
+
+
+
+
 ## MongoDB CLI
 You can also play around with the Mongo CLI. Refer [Mongo Shell Guide](https://docs.mongodb.com/manual/reference/mongo-shell/)
 
